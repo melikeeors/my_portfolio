@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Raleway:ital,wght@0,300;1,300&family=Sacramento&display=swap"
+        rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</head>
+
+<body id="body">
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg" style="background-color: rgb(167, 192, 197)">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">PORTFOLIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about_me">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#card1">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#card3">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#form-section">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="header-container">
+            <img id="headerImgBlue" src="72B0E4D6-E1CC-4A77-9F48-917352DEFBB5.jpg" alt="header-image">
+            <img id="headerImgGreen" src="DA2AC994-DBEA-46AA-AA3C-A6442A94909F.jpg" alt="header-image">
+            <img id="headerImgRed" src="1A9DEE67-4DEA-4D96-812A-F235A60D7240.jpg" alt="header-image">
+            <img id="headerImgPink" src="51FFE864-9571-45EB-ADB6-E8AAC068B5B3.jpg" alt="header-image">
+        </div>
+    </header>
+
+    <section id="about_me">
+        <div id="about_me_container">
+            <h3>About Me</h3>
+            <hr>
+            <br>
+            <p>I am a 3rd year computer engineering student. During my education, I try to improve myself as much as
+                possible and gain new experiences. I am aware that learning through experience is the most efficient and
+                effective way of learning, and I continue my education with this goal. My goal is to make myself as
+                knowledgeable and equipped as possible.
+                <span><br><br></span>
+                I like to do the task or job I am responsible for in the best possible way and I always pay attention to
+                even the smallest details. I can work in a planned and organized manner in busy schedules.
+                <span><br><br></span>
+                In my spare time, I like to travel, spend time with my family and friends, walk, listen to music and
+                watch gaming videos. I was interested in kickboxing for a while.
+                <span><br><br></span>
+                I aim to specialize in mobile application development in the future.</p>
+        </div>
+    </section>
+
+    <section id="card-section">
+        <div id="card-container">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <div class="col">
+                    <div id="card1" class="card">
+                        <img src="Ekran görüntüsü 2023-11-15 221203.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Responsive Web Design #1</h5>
+                            <hr>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <button class="card-button" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="card2" class="card">
+                        <img src="Ekran görüntüsü 2023-11-15 221053.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Responsive Web Design #2</h5>
+                            <hr>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <button class="card-button" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="card3" class="card">
+                        <img src="wallpaper.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <hr>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <button class="card-button" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div id="card4" class="card">
+                        <img src="wallpaper.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <hr>
+                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                                to additional content. This content is a little bit longer.</p>
+                            <button class="card-button" type="button" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="theme-section">
+        <div id="theme-container">
+            <p id="theme-text" class="theme-text mt-5" style="font-style: italic;">Select a Theme!</p>
+            <div class="m-5 mt-4" id="button-container">
+                <button type="button" id="red" class="theme-button">red</button>
+                <button type="button" id="pink" class="theme-button">pink</button>
+                <button type="button" id="green" class="theme-button">green</button>
+                <button type="button" id="blue" class="theme-button">blue</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="form-section">
+        <div class="form-floating mb-3 mt-5">
+            <h3>CONTACT ME</h3>
+            <hr>
+        </div>
+        <div class="form-floating mb-3 mt-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="floatingPassword" placeholder="Subject">
+            <label for="floatingPassword">Subject</label>
+        </div>
+        <div class="form-floating mb-5">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+        </div>
+        <button class="form-button mb-5" type="button">
+            <i id="send-button" class="fa-solid fa-paper-plane"></i>
+            SEND
+        </button>
+
+    </section>
+
+    <footer>
+        <div id="footer-container">
+            <div class="p-1" id="social">
+                <div id="icons">
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-threads"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div id="copyright">@ 2023 Copyright ...</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 20px;
+}
+
+#body {
+    background-color: rgb(38 56 76) ;
+    font-family: 'Raleway' !important;
+}
+
+.navbar {
+    z-index: 500;
+    position: fixed !important;
+    width: 100%;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-item {
+    margin: 0 0.5rem;
+}
+
+li a:hover {
+    color: white !important;
+}
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+#headerImgBlue {
+    display: block;
+    text-align: justify;
+    width: 100%;
+}
+
+#headerImgGreen {
+    display: none;
+    text-align: justify;
+    width: 100%;
+}
+
+#headerImgRed {
+    display: none;
+    text-align: justify;
+    width: 100%;
+}
+
+#headerImgPink {
+    display: none;
+    text-align: justify;
+    width: 100%;
+}
+
+#about_me {
+    background-color: rgb(210 181 193);
+    margin: 3rem 2.75rem 2rem 2.75rem;
+    padding: 2rem;
+    border: 0 solid black;
+    border-radius: 2rem;
+}
+
+#card-section {
+    margin: 2rem;
+}
+
+#card1 {
+    background-color: rgb(167, 192, 197);
+    color: white;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+#card2 {
+    background-color: rgb(167, 192, 197);
+    color: white;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+#card3 {
+    background-color: rgb(167, 192, 197);
+    color: white;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+#card4 {
+    background-color: rgb(167, 192, 197);
+    color: white;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.card-button {
+    display: inline-block !important;
+    background-color: rgb(38 56 76);
+    transition: 0.2s;
+}
+
+.card-button:hover {
+    background-color: white;
+    color: rgb(31, 44, 60);
+    border: 0.2rem solid rgb(31, 44, 60);
+}
+
+button {
+    color: white;
+    height: fit-content;
+    padding: 0.5rem;
+    border: 0rem solid black;
+    border-radius: 2rem !important;
+    float: right;
+    transition: 0.2s;
+}
+
+#theme-section {
+    display: flex;
+    justify-content: center;
+}
+
+#theme-container {
+    font-size: 1.25rem;
+    /* font-family: 'Sacramento'; */
+    margin: 0 2.5rem;
+    background-color: black;
+    display: grid;
+    justify-items: center;
+    color: white;
+    border: 0rem solid black;
+    max-width: fit-content;
+    border-radius: 2rem;
+}
+
+#button-container {
+    max-width: fit-content;
+}
+
+#button-container button {
+    font-size: 1rem;
+    border: none;
+    margin: 0 1rem;
+    border: 0.1rem solid black;
+    width: 4rem;
+    height: 2.5rem;
+}
+
+#form-section {
+    margin: 3rem;
+    background-color: rgb(210 181 193);
+    display: grid;
+    justify-items: center;
+    border: 0rem solid black;
+    border-radius: 2rem;
+}
+
+.form-floating {
+    display: grid !important;
+    width: 50%;
+}
+
+.form-button:hover {
+    background-color: white;
+    color: rgb(31, 44, 60);
+    border: 0.2rem solid rgb(31, 44, 60);
+}
+
+#blue {
+    background-color: rgb(38 56 76);
+}
+
+#blue:hover {
+    color: rgb(38 56 76);
+    background-color: white;
+    font-weight: bold;
+}
+
+#pink {
+    background-color: rgb(163 86 112);
+}
+
+#pink:hover {
+    color: rgb(163 86 112);
+    background-color: white;
+    font-weight: bold;
+}
+
+#red {
+    background-color: rgb(65 1 0);
+}
+
+#red:hover {
+    color: rgb(65 1 0);
+    background-color: white;
+    font-weight: bold;
+}
+
+#green {
+    background-color: rgb(54, 84, 44);
+}
+
+#green:hover {
+    color: rgb(54, 84, 44);
+    background-color: white;
+    font-weight: bold;
+}
+
+#footer-container {
+    display: grid;
+}
+
+#social {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: rgb(167, 192, 197);
+}
+
+.form-button {
+    background-color: rgb(38 56 76);
+}
+
+i {
+    margin: 0.2rem;
+}
+
+#icons i {
+    font-size: 1.5rem;
+    margin: 0.5rem 2rem;
+    color: rgb(31, 44, 60);
+}
+
+#icons i:hover {
+    color: white;
+}
+
+#copyright {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(210 181 193);
+}
