@@ -21,6 +21,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="contact.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -99,7 +100,8 @@
                 In my spare time, I like to travel, spend time with my family and friends, walk, listen to music and
                 watch gaming videos. I was interested in kickboxing for a while.
                 <span><br><br></span>
-                I aim to specialize in mobile application development in the future.</p>
+                I aim to specialize in mobile application development in the future.
+            </p>
         </div>
     </section>
 
@@ -181,27 +183,29 @@
     </section>
 
     <section id="form-section">
-        <div class="form-floating mb-3 mt-5">
-            <h3>CONTACT ME</h3>
-            <hr>
-        </div>
-        <div class="form-floating mb-3 mt-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email Address</label>
-        </div>
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control" id="floatingPassword" placeholder="Subject">
-            <label for="floatingPassword">Subject</label>
-        </div>
-        <div class="form-floating mb-5">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                style="height: 100px"></textarea>
-            <label for="floatingTextarea2">Comments</label>
-        </div>
-        <button class="form-button mb-5" type="button">
-            <i id="send-button" class="fa-solid fa-paper-plane"></i>
-            SEND
-        </button>
+        <form onsubmit="send(); reset(); return false">
+            <div class="form-floating mb-3 mt-5">
+                <h3>CONTACT ME</h3>
+                <hr>
+            </div>
+            <div class="form-floating mb-3 mt-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email Address</label>
+            </div>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingPassword" placeholder="Subject">
+                <label for="floatingPassword">Subject</label>
+            </div>
+            <div class="form-floating mb-5">
+                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                    style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+            <button class="form-button mb-5" type="submit">
+                <i id="send-button" class="fa-solid fa-paper-plane"></i>
+                SEND
+            </button>
+        </form>
 
     </section>
 
@@ -222,6 +226,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
 </body>
 
 </html>
