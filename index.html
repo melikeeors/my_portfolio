@@ -26,29 +26,9 @@
 </head>
 
 <body id="body">
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    ...
-                </div>
-                <div class="modal-footer">
-                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>-->
-                </div>
-            </div>
-        </div>
-    </div>
-
     <nav class="navbar navbar-expand-lg" style="background-color: rgb(167, 192, 197)">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">PORTFOLIO</a>
+            <a class="navbar-brand" href="index.html">PORTFOLIO</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -59,16 +39,13 @@
                         <a class="nav-link active" aria-current="page" href="#about_me">About Me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#card1">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#card3">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#form-section">Contact Me</a>
+                        <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact Me</a>
                     </li>
                 </ul>
             </div>
@@ -104,72 +81,7 @@
             </p>
         </div>
     </section>
-
-    <section id="card-section">
-        <div id="card-container">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-                <div class="col">
-                    <div id="card1" class="card">
-                        <img src="temizintikam.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Responsive Web Design #1</h5>
-                            <hr>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <button class="card-button" type="button" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div id="card2" class="card">
-                        <img src="teen_titans.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Responsive Web Design #2</h5>
-                            <hr>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <button class="card-button" type="button" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div id="card3" class="card">
-                        <img src="wallpaper.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <hr>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <button class="card-button" type="button" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Read More</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div id="card4" class="card">
-                        <img src="wallpaper.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <hr>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                            <button class="card-button" type="button" data-bs-toggle="modal"
-                                data-bs-target="#exampleModal">Read More</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="blog-section">
-        <div id="blog-container">
-
-        </div>
-    </section>
-
+    
     <section id="theme-section">
         <div id="theme-container">
             <p id="theme-text" class="theme-text mt-5" style="font-style: italic;">Select a Theme!</p>
@@ -180,33 +92,6 @@
                 <button type="button" id="blue" class="theme-button">blue</button>
             </div>
         </div>
-    </section>
-
-    <section id="form-section">
-        <form onsubmit="send(); reset(); return false">
-            <div class="form-floating mb-3 mt-5">
-                <h3>CONTACT ME</h3>
-                <hr>
-            </div>
-            <div class="form-floating mb-3 mt-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email Address</label>
-            </div>
-            <div class="form-floating mb-3">
-                <input type="text" class="form-control" id="floatingPassword" placeholder="Subject">
-                <label for="floatingPassword">Subject</label>
-            </div>
-            <div class="form-floating mb-5">
-                <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-                    style="height: 100px"></textarea>
-                <label for="floatingTextarea2">Comments</label>
-            </div>
-            <button class="form-button mb-5" type="submit">
-                <i id="send-button" class="fa-solid fa-paper-plane"></i>
-                SEND
-            </button>
-        </form>
-
     </section>
 
     <footer>
