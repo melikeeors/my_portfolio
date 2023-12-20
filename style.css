@@ -132,7 +132,7 @@ button {
 #theme-container {
     font-size: 1.25rem;
     /* font-family: 'Sacramento'; */
-    margin: 0 2.5rem;
+    margin: 0.5rem 2.5rem 2.5rem 2rem;
     background-color: black;
     display: grid;
     justify-items: center;
@@ -162,14 +162,19 @@ button {
     margin: 3rem;
     background-color: rgb(210 181 193);
     display: grid;
-    justify-items: center;
+    align-content: center;
+    justify-content: center;
     border: 0rem solid black;
     border-radius: 2rem;
 }
 
+#form-container {
+    display: grid;    
+    justify-items: center;
+}
+
 .form-floating {
-    display: grid !important;
-    width: 50%;
+    width: 110%;
 }
 
 .form-button:hover {
